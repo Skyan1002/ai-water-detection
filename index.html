@@ -1,26 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI for Water Body Detection</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f4f6f9;
+      color: #333;
+      max-width: 860px;
+      margin: 40px auto;
+      padding: 30px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+      background-color: #fff;
+      border-radius: 12px;
+    }
+    h1 {
+      font-size: 2.2em;
+      color: #1e88e5;
+    }
+    h2 {
+      color: #444;
+      border-left: 4px solid #1e88e5;
+      padding-left: 10px;
+      margin-top: 40px;
+    }
+    a {
+      color: #1e88e5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    code {
+      background: #e0e0e0;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+    footer {
+      font-size: 0.9em;
+      margin-top: 60px;
+      color: #777;
+    }
+  </style>
 </head>
-<body style="font-family: sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6;">
+<body>
   <h1>💧 AI for Water Body Detection</h1>
   <p>Welcome to this AI mini-course focused on water body identification from remote sensing imagery. The goal is to learn practical machine learning through hands-on lessons.</p>
-
-  <hr>
 
   <h2>📘 Lesson 1: Understand Your Data</h2>
   <p>Before any model training, it's essential to know your data well. Visualization and inspection help uncover structure and potential issues early on.</p>
   <p>In this lesson, we explore high-resolution land cover imagery, and create a binary mask: <code>1 = water</code>, <code>0 = non-water</code>.</p>
-
-  <p><strong>▶️ Open Lesson 1 in Google Colab:</strong><br>
+  <p><strong>▶️ Open in Google Colab:</strong><br>
     <a href="https://colab.research.google.com/drive/1S9lhyiG9kj5t1q9iZv_gP3kmcSvyQAfJ?usp=sharing" target="_blank">
-      📎 Colab Link - Lesson 1: Understand Your Data
+      📎 Lesson 1 - Understand Your Data
     </a>
   </p>
 
-  <hr>
-  <p style="font-size: 0.9em;">This site is hosted via GitHub Pages · Author: [Your Name or GitHub ID]</p>
+  <h2>🌿 Lesson 2: Water Detection with NDWI</h2>
+  <p>In this lesson, we apply the <strong>Normalized Difference Water Index (NDWI)</strong> technique to identify potential water pixels from imagery.</p>
+  <p>NDWI enhances water features using green and near-infrared bands:</p>
+  <p><code>NDWI = (Green - NIR) / (Green + NIR)</code></p>
+  <p>We threshold the NDWI values to create a preliminary water mask.</p>
+
+  <p><strong>▶️ Colab Notebook Coming Soon</strong></p>
+
+  <footer>
+    Author: Songkun Yan <br>
+    Last updated: June 30, 2025
+  </footer>
 </body>
 </html>
